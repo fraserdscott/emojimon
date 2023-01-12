@@ -1,5 +1,5 @@
 import { Has, HasValue, runQuery } from "@latticexyz/recs";
-import { useComponentValueStream } from "@latticexyz/std-client";
+import { useComponentValue } from "@latticexyz/react";
 import { uuid } from "@latticexyz/utils";
 import { useCallback, useEffect } from "react";
 import { useMUD } from "./MUDContext";
@@ -13,9 +13,8 @@ export const useMovement = () => {
   } = useMUD();
 
   const { width, height } = useMapConfig();
-  const playerPosition = useComponentValueStream(Position, playerEntity);
-  const inEncounter =
-    useComponentValueStream(Encounter, playerEntity)?.value != null;
+  const playerPosition = useComponentValue(playerEntity, Position);
+  const inEncounter = useComponentValue(playerEntity, Encounter)?.value != null;
 
   const moveTo = useCallback(
     async (x: number, y: number) => {

@@ -1,4 +1,4 @@
-import { useComponentValueStream } from "@latticexyz/std-client";
+import { useComponentValue } from "@latticexyz/react";
 import { uuid } from "@latticexyz/utils";
 import { useCallback, useMemo } from "react";
 import { useMUD } from "./MUDContext";
@@ -10,8 +10,7 @@ export const useJoinGame = () => {
     playerEntity,
   } = useMUD();
 
-  const canJoinGame =
-    useComponentValueStream(Player, playerEntity)?.value !== true;
+  const canJoinGame = useComponentValue(playerEntity, Player)?.value !== true;
 
   const joinGame = useCallback(
     async (x: number, y: number) => {

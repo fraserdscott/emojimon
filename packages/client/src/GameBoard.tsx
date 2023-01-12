@@ -1,4 +1,4 @@
-import { useComponentValueStream } from "@latticexyz/std-client";
+import { useComponentValue } from "@latticexyz/react";
 import { useMUD } from "./MUDContext";
 import { useMapConfig } from "./useMapConfig";
 import { useJoinGame } from "./useJoinGame";
@@ -6,7 +6,7 @@ import { useMovement } from "./useMovement";
 import { useEffect, useMemo, useState } from "react";
 import { EncounterScreen } from "./EncounterScreen";
 import { EntityID, getComponentValueStrict, Has } from "@latticexyz/recs";
-import { useEntityQuery } from "./useEntityQuery";
+import { useEntityQuery } from "@latticexyz/react";
 
 export const GameBoard = () => {
   const {
@@ -19,7 +19,7 @@ export const GameBoard = () => {
   const columns = new Array(mapConfig.width).fill(0).map((_, i) => i);
 
   const { canJoinGame, joinGame } = useJoinGame();
-  const playerPosition = useComponentValueStream(Position, playerEntity);
+  const playerPosition = useComponentValue(playerEntity, Position);
   useMovement();
 
   const otherPlayers = useEntityQuery(
@@ -34,8 +34,9 @@ export const GameBoard = () => {
       };
     });
 
-  const encounterId = useComponentValueStream(Encounter, playerEntity)
-    ?.value as EntityID | undefined;
+  const encounterId = useComponentValue(playerEntity, Encounter)?.value as
+    | EntityID
+    | undefined;
   const [showEncounter, setShowEncounter] = useState(false);
 
   // Reset show encounter when we leave encounter

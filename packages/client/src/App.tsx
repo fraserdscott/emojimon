@@ -1,5 +1,5 @@
 import { SyncState } from "@latticexyz/network";
-import { useComponentValueStream } from "@latticexyz/std-client";
+import { useComponentValue } from "@latticexyz/react";
 import { GameBoard } from "./GameBoard";
 import { useMUD } from "./MUDContext";
 
@@ -9,14 +9,11 @@ export const App = () => {
     singletonEntity,
   } = useMUD();
 
-  const loadingState = useComponentValueStream(
-    LoadingState,
-    singletonEntity
-  ) ?? {
+  const loadingState = useComponentValue(singletonEntity, LoadingState, {
     state: SyncState.CONNECTING,
     msg: "Connecting",
     percentage: 0,
-  };
+  });
 
   return (
     <div className="w-screen h-screen flex items-center justify-center">

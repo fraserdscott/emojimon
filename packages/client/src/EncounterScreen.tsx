@@ -4,7 +4,7 @@ import {
   Has,
   HasValue,
 } from "@latticexyz/recs";
-import { useEntityQuery } from "./useEntityQuery";
+import { useEntityQuery } from "@latticexyz/react";
 import { useMUD } from "./MUDContext";
 import { useEffect, useMemo, useState } from "react";
 import { MonsterType, monsterTypes } from "./monsterTypes";

@@ -737,6 +737,9 @@
   dependencies:
     debug "^4.3.4"
 
+"@latticexyz/react@file:../mud/packages/react":
+  version "1.32.0"
+
 "@latticexyz/recs@^1.32.0":
   version "1.32.0"
   resolved "https://registry.yarnpkg.com/@latticexyz/recs/-/recs-1.32.0.tgz#67412adb8141f6bfe82126923da5c3f297a19252"
