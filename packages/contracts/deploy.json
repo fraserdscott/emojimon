@@ -1,38 +1,17 @@
 {
   "components": [
-    "CounterComponent",
-    "EncounterComponent",
-    "EncounterableComponent",
-    "EncounterTriggerComponent",
-    "MapConfigComponent",
-    "MonsterTypeComponent",
-    "MovableComponent",
-    "ObstructionComponent",
-    "OwnedByComponent",
-    "PlayerComponent",
-    "PositionComponent"
+    "InputsComponent",
+    "MapComponent"
   ],
   "systems": [
     {
-      "name": "EncounterFleeSystem",
-      "writeAccess": ["EncounterComponent"]
+      "name": "SetSystem",
+      "writeAccess": ["InputsComponent"]
     },
     {
-      "name": "EncounterThrowSystem",
-      "writeAccess": ["CounterComponent", "EncounterComponent", "OwnedByComponent"]
-    },
-    {
-      "name": "InitSystem",
-      "writeAccess": ["EncounterTriggerComponent", "MapConfigComponent", "ObstructionComponent", "PositionComponent"],
-      "initialize": "new bytes(0)"
-    },
-    {
-      "name": "JoinGameSystem",
-      "writeAccess": ["EncounterableComponent", "MovableComponent", "PlayerComponent", "PositionComponent"]
-    },
-    {
-      "name": "MoveSystem",
-      "writeAccess": ["EncounterComponent", "MonsterTypeComponent", "PositionComponent"]
+      "name": "MapSystem",
+      "writeAccess": ["MapComponent"]
     }
-  ]
+  ],
+  "initializers": ["LibInit"]
 }

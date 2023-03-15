@@ -9,7 +9,8 @@ import {
   GodID as singletonEntityId,
 } from "@latticexyz/network";
 import { ethers } from "ethers";
-import { EntityID, overridableComponent } from "@latticexyz/recs";
+import { EntityID } from "@latticexyz/recs";
+import { Coord, Input } from "../Game";
 
 export type SetupResult = Awaited<ReturnType<typeof setup>>;
 
@@ -60,10 +61,20 @@ export const setup = async () => {
     setInterval(requestDrip, 20000);
   }
 
-  // Add support for optimistic rendering
-  const componentsWithOverrides = {
-    Position: overridableComponent(components.Position),
-    Player: overridableComponent(components.Player),
+  const moveTo = async (inputs: Array<Input>) => {
+    const tx = await result.systems["system.Set"].executeTyped(
+      inputs.map((i) => i.timestamp),
+      inputs.map((i) => i.direction)
+    );
+    await tx.wait();
+  };
+
+  const setMap = async (inputs: Array<Coord>) => {
+    const tx = await result.systems["system.Map"].executeTyped(
+      inputs.map((i) => i.x),
+      inputs.map((i) => i.y)
+    );
+    await tx.wait();
   };
 
   return {
@@ -75,8 +86,11 @@ export const setup = async () => {
     playerEntity,
     components: {
       ...result.components,
-      ...componentsWithOverrides,
       ...clientComponents,
+    },
+    api: {
+      moveTo,
+      setMap,
     },
   };
 };
