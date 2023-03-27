@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: Unlicense
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0;
 import "std-contracts/components/VoxelCoordComponent.sol";
 
-uint256 constant ID = uint256(keccak256("component.Goal"));
+uint256 constant ID = uint256(keccak256("component.Position"));
 
-contract GoalComponent is VoxelCoordComponent {
+contract PositionComponent is VoxelCoordComponent {
   constructor(address world) VoxelCoordComponent(world, ID) {}
 }

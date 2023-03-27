@@ -9,8 +9,8 @@ import {
   GodID as singletonEntityId,
 } from "@latticexyz/network";
 import { ethers } from "ethers";
-import { EntityID } from "@latticexyz/recs";
-import { Coord, Input } from "../Game";
+import { EntityID, getComponentValue } from "@latticexyz/recs";
+import { uuid } from "@latticexyz/utils";
 
 export type SetupResult = Awaited<ReturnType<typeof setup>>;
 
@@ -61,22 +61,32 @@ export const setup = async () => {
     setInterval(requestDrip, 20000);
   }
 
-  const moveTo = async (inputs: Array<Input>) => {
-    const tx = await result.systems["system.Set"].executeTyped(
-      inputs.map((i) => i.timestamp),
-      inputs.map((i) => i.direction)
-    );
-    await tx.wait();
+  const moveTo = async (x: number, y: number, z: number) => {
+    const positionId = uuid();
+    components.Position.addOverride(positionId, {
+      entity: playerEntity,
+      value: { x, y, z },
+    });
+
+    try {
+      const tx = await result.systems["system.Move"].executeTyped({ x, y, z });
+      await tx.wait();
+    } finally {
+      components.Position.removeOverride(positionId);
+    }
   };
 
-  const upload = async (goal: Coord, inputs: Array<Coord>) => {
-    const tx = await result.systems["system.Upload"].executeTyped(
-      goal.x,
-      goal.y,
-      inputs.map((i) => i.x),
-      inputs.map((i) => i.y)
-    );
-    await tx.wait();
+  const moveBy = async (deltaX: number, deltaZ: number) => {
+    const playerPosition = getComponentValue(components.Position, playerEntity);
+    if (playerPosition) {
+      await moveTo(
+        playerPosition.x + deltaX,
+        playerPosition.y,
+        playerPosition.z + deltaZ
+      );
+    } else {
+      await moveTo(deltaX, 0, deltaZ);
+    }
   };
 
   return {
@@ -92,7 +102,7 @@ export const setup = async () => {
     },
     api: {
       moveTo,
-      upload,
+      moveBy,
     },
   };
 };

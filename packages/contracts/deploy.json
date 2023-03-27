@@ -1,17 +1,11 @@
 {
   "components": [
-    "InputsComponent",
-    "CollidersComponent",
-    "GoalComponent"
+    "PositionComponent"
   ],
   "systems": [
     {
-      "name": "SetSystem",
-      "writeAccess": ["InputsComponent"]
-    },
-    {
-      "name": "UploadSystem",
-      "writeAccess": ["CollidersComponent", "GoalComponent"]
+      "name": "MoveSystem",
+      "writeAccess": ["PositionComponent"]
     }
   ]
 }
