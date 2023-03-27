@@ -41,7 +41,7 @@ export const Board3D = ({
   colliders: Array<Coord>;
 }) => {
   return (
-    <Canvas>
+    <Canvas className="border-2 border-gray-100">
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Player position={[position.x, position.y, 0]} />

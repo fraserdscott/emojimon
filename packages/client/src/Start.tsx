@@ -25,9 +25,10 @@ export const Start = () => {
       {maps.length > 0 ? (
         <Game colliders={maps[0]} />
       ) : (
-        <div>
+        <div className="w-full text-center">
           <div>no maps!</div>
           <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() =>
               setMap([
                 { x: 2, y: 2 },
