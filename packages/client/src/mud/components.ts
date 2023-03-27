@@ -1,4 +1,5 @@
 import { defineComponent, Type } from "@latticexyz/recs";
+import { defineVoxelCoordComponent } from "@latticexyz/std-client";
 import { world } from "./world";
 
 export const components = {
@@ -13,15 +14,19 @@ export const components = {
       metadata: { contractId: "component.Inputs" },
     }
   ),
-  Map: defineComponent(
+  Goal: defineVoxelCoordComponent(world, {
+    id: "Goal",
+    metadata: { contractId: "component.Goal" },
+  }),
+  Colliders: defineComponent(
     world,
     {
       xs: Type.NumberArray,
       ys: Type.NumberArray,
     },
     {
-      id: "Map",
-      metadata: { contractId: "component.Map" },
+      id: "Colliders",
+      metadata: { contractId: "component.Colliders" },
     }
   ),
 };

@@ -2,14 +2,14 @@
 pragma solidity >=0.8.0;
 import "solecs/Component.sol";
 
-struct Map {
+struct Colliders {
   int32[] xs;
   int32[] ys;
 }
 
-uint256 constant ID = uint256(keccak256("component.Map"));
+uint256 constant ID = uint256(keccak256("component.Colliders"));
 
-contract MapComponent is BareComponent {
+contract CollidersComponent is BareComponent {
   constructor(address world) BareComponent(world, ID) {}
 
   function getSchema() public pure override returns (string[] memory keys, LibTypes.SchemaValue[] memory values) {
@@ -23,16 +23,16 @@ contract MapComponent is BareComponent {
     values[1] = LibTypes.SchemaValue.INT32_ARRAY;
   }
 
-  function set(uint256 entity, Map calldata value) public {
+  function set(uint256 entity, Colliders calldata value) public {
     set(entity, abi.encode(value.xs, value.ys));
   }
 
-  function getValue(uint256 entity) public view returns (Map memory) {
+  function getValue(uint256 entity) public view returns (Colliders memory) {
     (int32[] memory xs, int32[] memory ys) = abi.decode(getRawValue(entity), (int32[], int32[]));
-    return Map(xs, ys);
+    return Colliders(xs, ys);
   }
 
-  function getEntitiesWithValue(Map calldata inputs) public view returns (uint256[] memory) {
+  function getEntitiesWithValue(Colliders calldata inputs) public view returns (uint256[] memory) {
     return getEntitiesWithValue(abi.encode(inputs));
   }
 }

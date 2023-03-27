@@ -1,7 +1,8 @@
 {
   "components": [
     "InputsComponent",
-    "MapComponent"
+    "CollidersComponent",
+    "GoalComponent"
   ],
   "systems": [
     {
@@ -9,9 +10,8 @@
       "writeAccess": ["InputsComponent"]
     },
     {
-      "name": "MapSystem",
-      "writeAccess": ["MapComponent"]
+      "name": "UploadSystem",
+      "writeAccess": ["CollidersComponent", "GoalComponent"]
     }
-  ],
-  "initializers": ["LibInit"]
+  ]
 }

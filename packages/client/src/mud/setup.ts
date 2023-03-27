@@ -69,8 +69,10 @@ export const setup = async () => {
     await tx.wait();
   };
 
-  const setMap = async (inputs: Array<Coord>) => {
-    const tx = await result.systems["system.Map"].executeTyped(
+  const upload = async (goal: Coord, inputs: Array<Coord>) => {
+    const tx = await result.systems["system.Upload"].executeTyped(
+      goal.x,
+      goal.y,
       inputs.map((i) => i.x),
       inputs.map((i) => i.y)
     );
@@ -90,7 +92,7 @@ export const setup = async () => {
     },
     api: {
       moveTo,
-      setMap,
+      upload,
     },
   };
 };

@@ -7,6 +7,7 @@ import {
 import { useEffect, useState } from "react";
 import { Board3D } from "./Board3D";
 import { useMUD } from "./MUDContext";
+import { calculateTime, Level } from "./Start";
 
 export enum Direction {
   Up,
@@ -25,7 +26,7 @@ export interface Input {
   direction: Direction;
 }
 
-const processInput = (
+export const processInput = (
   colliders: Array<Coord>,
   position: Coord,
   direction: Direction
@@ -58,7 +59,7 @@ const processInput = (
   }
 };
 
-export const Game = ({ colliders }: { colliders: Array<Coord> }) => {
+export const Game = ({ level }: { level: Level }) => {
   const {
     api: { moveTo },
     components: { Inputs },
@@ -89,7 +90,9 @@ export const Game = ({ colliders }: { colliders: Array<Coord> }) => {
           direction = Direction.Right;
         }
 
-        setLocalPosition(processInput(colliders, localPosition, direction));
+        setLocalPosition(
+          processInput(level.colliders, localPosition, direction)
+        );
         setLocalInputs([
           ...localInputs,
           {
@@ -117,7 +120,7 @@ export const Game = ({ colliders }: { colliders: Array<Coord> }) => {
           const elapsed = Date.now() - start;
           if (inputs[i].timestamp <= elapsed) {
             const place = processInput(
-              colliders,
+              level.colliders,
               ghostPositions[z],
               inputs[i].direction
             );
@@ -142,7 +145,7 @@ export const Game = ({ colliders }: { colliders: Array<Coord> }) => {
   return (
     <div className="text-center w-full h-full">
       <Board3D
-        colliders={colliders}
+        level={level}
         position={recording ? localPosition : { x: 10000, y: 10000 }}
         positions={recording ? ghostPositions : []}
       />
@@ -189,6 +192,17 @@ export const Game = ({ colliders }: { colliders: Array<Coord> }) => {
         </button>
       )}
       <div>There are {ghostEntities.length} ghosts.</div>
+      <div>
+        {ghostInputs.map((g, i) => {
+          const time = calculateTime(level, g);
+
+          return (
+            <div>
+              {i}: {time ? parseInt(time) / 1000 : "inf"}s
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
