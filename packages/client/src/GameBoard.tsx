@@ -51,11 +51,15 @@ function Scene() {
         playerPosition.y + 5,
         playerPosition.z + 5
       );
+    } else {
+      camera.position.set(-5, 5, 5);
     }
     camera.rotation.order = "YXZ";
     camera.rotation.y = -Math.PI / 4;
     camera.rotation.x = Math.atan(-1 / Math.sqrt(2));
   });
+
+  console.log(playerPosition);
 
   return (
     <group>
