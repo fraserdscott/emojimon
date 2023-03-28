@@ -62,18 +62,8 @@ export const setup = async () => {
   }
 
   const moveTo = async (x: number, y: number, z: number) => {
-    const positionId = uuid();
-    components.Position.addOverride(positionId, {
-      entity: playerEntity,
-      value: { x, y, z },
-    });
-
-    try {
-      const tx = await result.systems["system.Move"].executeTyped({ x, y, z });
-      await tx.wait();
-    } finally {
-      components.Position.removeOverride(positionId);
-    }
+    const tx = await result.systems["system.Move"].executeTyped({ x, y, z });
+    await tx.wait();
   };
 
   const moveBy = async (deltaX: number, deltaY: number, deltaZ: number) => {
