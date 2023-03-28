@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { useRef } from "react";
-import { Canvas, ThreeElements, useThree } from "@react-three/fiber";
+import { Canvas, Color, ThreeElements, useThree } from "@react-three/fiber";
 import { useComponentValue, useEntityQuery } from "@latticexyz/react";
 import { getComponentValueStrict, Has } from "@latticexyz/recs";
 import { useMUD } from "./MUDContext";
@@ -16,17 +16,19 @@ function Plane(props: ThreeElements["mesh"]) {
   );
 }
 
-function Player(props: ThreeElements["mesh"]) {
+function Player(props: ThreeElements["mesh"] & { color: Color }) {
   const ref = useRef<THREE.Mesh>(null!);
   return (
     <mesh {...props} ref={ref}>
       <boxGeometry args={[1, 2, 1]} />
+      <meshStandardMaterial color={props.color} />
     </mesh>
   );
 }
 
 function Scene() {
   const {
+    world,
     components: { Position },
     playerEntity,
   } = useMUD();
@@ -66,11 +68,18 @@ function Scene() {
       <Plane position={[0, -5, 0]} />
       {playerPosition ? (
         <Player
+          color={"red"}
           position={[playerPosition.x, playerPosition.y, playerPosition.z]}
         />
       ) : null}
       {otherPlayers.map((p, i) => (
-        <Player key={i} position={[p.position.x, p.position.y, p.position.z]} />
+        <Player
+          key={i}
+          color={Math.floor(
+            (parseInt(world.entities[p.entity]) * 123231) % 16777215
+          )}
+          position={[p.position.x, p.position.y, p.position.z]}
+        />
       ))}
     </group>
   );
