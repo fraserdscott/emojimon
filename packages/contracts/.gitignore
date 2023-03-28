@@ -5,6 +5,5 @@ bindings/
 artifacts/
 deployments
 abi/
-types/
 broadcast/
 .env

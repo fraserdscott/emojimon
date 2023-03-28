@@ -17,23 +17,13 @@ function Plane(props: ThreeElements["mesh"]) {
   );
 }
 
-function MyPlayer(props: ThreeElements["mesh"]) {
+function Player(props: ThreeElements["mesh"]) {
   const obj = useLoader(OBJLoader, "/donkey.obj");
 
   const ref = useRef<THREE.Mesh>(null!);
   return (
     <mesh {...props} ref={ref}>
       <primitive object={obj} scale={3} rotation={[-Math.PI / 2, 0, 0]} />
-    </mesh>
-  );
-}
-
-function Player(props: ThreeElements["mesh"]) {
-  const ref = useRef<THREE.Mesh>(null!);
-  return (
-    <mesh {...props} ref={ref}>
-      <sphereGeometry args={[1]} />
-      <meshStandardMaterial color="red" />
     </mesh>
   );
 }
@@ -76,7 +66,7 @@ function Scene() {
       <pointLight position={[10, 10, 10]} />
       <Plane position={[0, -5, 0]} />
       {playerPosition ? (
-        <MyPlayer
+        <Player
           position={[playerPosition.x, playerPosition.y, playerPosition.z]}
         />
       ) : null}
