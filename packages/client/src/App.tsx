@@ -15,8 +15,17 @@ export const App = () => {
     percentage: 0,
   };
 
+  const {
+    components: { Position },
+    playerEntity,
+  } = useMUD();
+
+  const playerPosition = useComponentValue(Position, playerEntity);
+
+  console.log(playerPosition);
+
   return (
-    <div className="h-96">
+    <div className="w-screen h-screen">
       {loadingState.state !== SyncState.LIVE ? (
         <div>
           {loadingState.msg} ({Math.floor(loadingState.percentage)}%)

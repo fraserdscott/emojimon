@@ -59,8 +59,6 @@ function Scene() {
     camera.rotation.x = Math.atan(-1 / Math.sqrt(2));
   });
 
-  console.log(playerPosition);
-
   return (
     <group>
       <ambientLight />
@@ -80,7 +78,7 @@ function Scene() {
 
 export const GameBoard = () => {
   return (
-    <Canvas className="border-2 border-gray-100">
+    <Canvas>
       <Scene />
     </Canvas>
   );
