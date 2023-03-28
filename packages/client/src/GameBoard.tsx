@@ -68,7 +68,9 @@ function Scene() {
       <Plane position={[0, -5, 0]} />
       {playerPosition ? (
         <Player
-          color={"red"}
+          color={Math.floor(
+            (parseInt(world.entities[playerEntity]) * 123456) % 16777215
+          )}
           position={[playerPosition.x, playerPosition.y, playerPosition.z]}
         />
       ) : null}
@@ -76,7 +78,7 @@ function Scene() {
         <Player
           key={i}
           color={Math.floor(
-            (parseInt(world.entities[p.entity]) * 123231) % 16777215
+            (parseInt(world.entities[p.entity]) * 123456) % 16777215
           )}
           position={[p.position.x, p.position.y, p.position.z]}
         />

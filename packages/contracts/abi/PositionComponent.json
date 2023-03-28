@@ -1077,7 +1077,7 @@
     "id": 15952,
     "exportedSymbols": {
       "BareComponent": [
-        16609
+        16630
       ],
       "Component": [
         262
@@ -1086,22 +1086,22 @@
         15938
       ],
       "IEntityIndexer": [
-        17064
+        17085
       ],
       "IWorld": [
         1035
       ],
       "LibTypes": [
-        16648
+        16669
       ],
       "MapSet": [
-        16860
+        16881
       ],
       "PositionComponent": [
         15951
       ],
       "Set": [
-        17045
+        17066
       ],
       "VoxelCoord": [
         1334
@@ -1396,8 +1396,8 @@
         ],
         "canonicalName": "PositionComponent",
         "contractDependencies": [
-          16860,
-          17045
+          16881,
+          17066
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
@@ -1405,15 +1405,15 @@
           15951,
           1489,
           262,
-          16609,
-          18817,
-          19334
+          16630,
+          18838,
+          19355
         ],
         "name": "PositionComponent",
         "nameLocation": "191:17:49",
         "scope": 15952,
         "usedErrors": [
-          16290
+          16311
         ]
       }
     ],

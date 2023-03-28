@@ -76,16 +76,16 @@ export const setup = async () => {
     }
   };
 
-  const moveBy = async (deltaX: number, deltaZ: number) => {
+  const moveBy = async (deltaX: number, deltaY: number, deltaZ: number) => {
     const playerPosition = getComponentValue(components.Position, playerEntity);
     if (playerPosition) {
       await moveTo(
         playerPosition.x + deltaX,
-        playerPosition.y,
+        playerPosition.y + deltaY,
         playerPosition.z + deltaZ
       );
     } else {
-      await moveTo(deltaX, 0, deltaZ);
+      await moveTo(deltaX, deltaY, deltaZ);
     }
   };
 

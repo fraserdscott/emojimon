@@ -1013,22 +1013,22 @@
         1035
       ],
       "LibQuery": [
-        18363
+        18384
       ],
       "QueryFragment": [
         1057
       ],
       "RegisterSystem": [
-        18737
+        18758
       ],
       "RegisterType": [
-        18521
+        18542
       ],
       "Set": [
-        17045
+        17066
       ],
       "Uint256Component": [
-        18482
+        18503
       ],
       "World": [
         893
@@ -1040,7 +1040,7 @@
         1101
       ],
       "componentsComponentId": [
-        18492
+        18513
       ],
       "entityToAddress": [
         1084
@@ -1055,10 +1055,10 @@
         1166
       ],
       "registerSystemId": [
-        18529
+        18550
       ],
       "systemsComponentId": [
-        18500
+        18521
       ]
     },
     "nodeType": "SourceUnit",
@@ -1085,7 +1085,7 @@
         "file": "./Set.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 894,
-        "sourceUnit": 17046,
+        "sourceUnit": 17067,
         "symbolAliases": [
           {
             "foreign": {
@@ -1093,7 +1093,7 @@
               "name": "Set",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 17045,
+              "referencedDeclaration": 17066,
               "src": "66:3:7",
               "typeDescriptions": {}
             },
@@ -1111,7 +1111,7 @@
         "file": "./LibQuery.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 894,
-        "sourceUnit": 18364,
+        "sourceUnit": 18385,
         "symbolAliases": [
           {
             "foreign": {
@@ -1119,7 +1119,7 @@
               "name": "LibQuery",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18363,
+              "referencedDeclaration": 18384,
               "src": "99:8:7",
               "typeDescriptions": {}
             },
@@ -1227,7 +1227,7 @@
         "file": "./components/Uint256Component.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 894,
-        "sourceUnit": 18483,
+        "sourceUnit": 18504,
         "symbolAliases": [
           {
             "foreign": {
@@ -1235,7 +1235,7 @@
               "name": "Uint256Component",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18482,
+              "referencedDeclaration": 18503,
               "src": "340:16:7",
               "typeDescriptions": {}
             },
@@ -1327,7 +1327,7 @@
         "file": "./constants.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 894,
-        "sourceUnit": 18501,
+        "sourceUnit": 18522,
         "symbolAliases": [
           {
             "foreign": {
@@ -1335,7 +1335,7 @@
               "name": "componentsComponentId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18492,
+              "referencedDeclaration": 18513,
               "src": "524:21:7",
               "typeDescriptions": {}
             },
@@ -1347,7 +1347,7 @@
               "name": "systemsComponentId",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18500,
+              "referencedDeclaration": 18521,
               "src": "547:18:7",
               "typeDescriptions": {}
             },
@@ -1365,7 +1365,7 @@
         "file": "./systems/RegisterSystem.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 894,
-        "sourceUnit": 18738,
+        "sourceUnit": 18759,
         "symbolAliases": [
           {
             "foreign": {
@@ -1373,7 +1373,7 @@
               "name": "RegisterSystem",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18737,
+              "referencedDeclaration": 18758,
               "src": "601:14:7",
               "typeDescriptions": {}
             },
@@ -1385,7 +1385,7 @@
               "name": "ID",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18529,
+              "referencedDeclaration": 18550,
               "src": "617:2:7",
               "typeDescriptions": {}
             },
@@ -1398,7 +1398,7 @@
               "name": "RegisterType",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 18521,
+              "referencedDeclaration": 18542,
               "src": "641:12:7",
               "typeDescriptions": {}
             },
@@ -1425,7 +1425,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Set_$17045",
+              "typeIdentifier": "t_contract$_Set_$17066",
               "typeString": "contract Set"
             },
             "typeName": {
@@ -1438,13 +1438,13 @@
                   "1625:3:7"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 17045,
+                "referencedDeclaration": 17066,
                 "src": "1625:3:7"
               },
-              "referencedDeclaration": 17045,
+              "referencedDeclaration": 17066,
               "src": "1625:3:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Set_$17045",
+                "typeIdentifier": "t_contract$_Set_$17066",
                 "typeString": "contract Set"
               }
             },
@@ -1460,7 +1460,7 @@
                 "nodeType": "NewExpression",
                 "src": "1648:7:7",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Set_$17045_$",
+                  "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Set_$17066_$",
                   "typeString": "function () returns (contract Set)"
                 },
                 "typeName": {
@@ -1473,13 +1473,13 @@
                       "1652:3:7"
                     ],
                     "nodeType": "IdentifierPath",
-                    "referencedDeclaration": 17045,
+                    "referencedDeclaration": 17066,
                     "src": "1652:3:7"
                   },
-                  "referencedDeclaration": 17045,
+                  "referencedDeclaration": 17066,
                   "src": "1652:3:7",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Set_$17045",
+                    "typeIdentifier": "t_contract$_Set_$17066",
                     "typeString": "contract Set"
                   }
                 }
@@ -1496,7 +1496,7 @@
               "src": "1648:9:7",
               "tryCall": false,
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Set_$17045",
+                "typeIdentifier": "t_contract$_Set_$17066",
                 "typeString": "contract Set"
               }
             },
@@ -1515,7 +1515,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+              "typeIdentifier": "t_contract$_Uint256Component_$18503",
               "typeString": "contract Uint256Component"
             },
             "typeName": {
@@ -1528,13 +1528,13 @@
                   "1661:16:7"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 18482,
+                "referencedDeclaration": 18503,
                 "src": "1661:16:7"
               },
-              "referencedDeclaration": 18482,
+              "referencedDeclaration": 18503,
               "src": "1661:16:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                "typeIdentifier": "t_contract$_Uint256Component_$18503",
                 "typeString": "contract Uint256Component"
               }
             },
@@ -1553,7 +1553,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+              "typeIdentifier": "t_contract$_Uint256Component_$18503",
               "typeString": "contract Uint256Component"
             },
             "typeName": {
@@ -1566,13 +1566,13 @@
                   "1701:16:7"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 18482,
+                "referencedDeclaration": 18503,
                 "src": "1701:16:7"
               },
-              "referencedDeclaration": 18482,
+              "referencedDeclaration": 18503,
               "src": "1701:16:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                "typeIdentifier": "t_contract$_Uint256Component_$18503",
                 "typeString": "contract Uint256Component"
               }
             },
@@ -1592,7 +1592,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+              "typeIdentifier": "t_contract$_RegisterSystem_$18758",
               "typeString": "contract RegisterSystem"
             },
             "typeName": {
@@ -1605,13 +1605,13 @@
                   "1738:14:7"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 18737,
+                "referencedDeclaration": 18758,
                 "src": "1738:14:7"
               },
-              "referencedDeclaration": 18737,
+              "referencedDeclaration": 18758,
               "src": "1738:14:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                 "typeString": "contract RegisterSystem"
               }
             },
@@ -1875,7 +1875,7 @@
                       "referencedDeclaration": 396,
                       "src": "2024:11:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                        "typeIdentifier": "t_contract$_Uint256Component_$18503",
                         "typeString": "contract Uint256Component"
                       }
                     },
@@ -1949,7 +1949,7 @@
                           "name": "componentsComponentId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18492,
+                          "referencedDeclaration": 18513,
                           "src": "2071:21:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1976,7 +1976,7 @@
                         "nodeType": "NewExpression",
                         "src": "2038:20:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_Uint256Component_$18482_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_Uint256Component_$18503_$",
                           "typeString": "function (address,uint256) returns (contract Uint256Component)"
                         },
                         "typeName": {
@@ -1989,13 +1989,13 @@
                               "2042:16:7"
                             ],
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 18482,
+                            "referencedDeclaration": 18503,
                             "src": "2042:16:7"
                           },
-                          "referencedDeclaration": 18482,
+                          "referencedDeclaration": 18503,
                           "src": "2042:16:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                            "typeIdentifier": "t_contract$_Uint256Component_$18503",
                             "typeString": "contract Uint256Component"
                           }
                         }
@@ -2012,13 +2012,13 @@
                       "src": "2038:55:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                        "typeIdentifier": "t_contract$_Uint256Component_$18503",
                         "typeString": "contract Uint256Component"
                       }
                     },
                     "src": "2024:69:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                       "typeString": "contract Uint256Component"
                     }
                   },
@@ -2041,7 +2041,7 @@
                       "referencedDeclaration": 399,
                       "src": "2099:8:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                        "typeIdentifier": "t_contract$_Uint256Component_$18503",
                         "typeString": "contract Uint256Component"
                       }
                     },
@@ -2115,7 +2115,7 @@
                           "name": "systemsComponentId",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18500,
+                          "referencedDeclaration": 18521,
                           "src": "2143:18:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2142,7 +2142,7 @@
                         "nodeType": "NewExpression",
                         "src": "2110:20:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_Uint256Component_$18482_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_address_$_t_uint256_$returns$_t_contract$_Uint256Component_$18503_$",
                           "typeString": "function (address,uint256) returns (contract Uint256Component)"
                         },
                         "typeName": {
@@ -2155,13 +2155,13 @@
                               "2114:16:7"
                             ],
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 18482,
+                            "referencedDeclaration": 18503,
                             "src": "2114:16:7"
                           },
-                          "referencedDeclaration": 18482,
+                          "referencedDeclaration": 18503,
                           "src": "2114:16:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                            "typeIdentifier": "t_contract$_Uint256Component_$18503",
                             "typeString": "contract Uint256Component"
                           }
                         }
@@ -2178,13 +2178,13 @@
                       "src": "2110:52:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                        "typeIdentifier": "t_contract$_Uint256Component_$18503",
                         "typeString": "contract Uint256Component"
                       }
                     },
                     "src": "2099:63:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                       "typeString": "contract Uint256Component"
                     }
                   },
@@ -2207,7 +2207,7 @@
                       "referencedDeclaration": 402,
                       "src": "2168:8:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                        "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                         "typeString": "contract RegisterSystem"
                       }
                     },
@@ -2237,7 +2237,7 @@
                               "referencedDeclaration": 396,
                               "src": "2212:11:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                                "typeIdentifier": "t_contract$_Uint256Component_$18503",
                                 "typeString": "contract Uint256Component"
                               }
                             }
@@ -2245,7 +2245,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                                "typeIdentifier": "t_contract$_Uint256Component_$18503",
                                 "typeString": "contract Uint256Component"
                               }
                             ],
@@ -2304,7 +2304,7 @@
                         "nodeType": "NewExpression",
                         "src": "2179:18:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IWorld_$1035_$_t_address_$returns$_t_contract$_RegisterSystem_$18737_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$_t_contract$_IWorld_$1035_$_t_address_$returns$_t_contract$_RegisterSystem_$18758_$",
                           "typeString": "function (contract IWorld,address) returns (contract RegisterSystem)"
                         },
                         "typeName": {
@@ -2317,13 +2317,13 @@
                               "2183:14:7"
                             ],
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 18737,
+                            "referencedDeclaration": 18758,
                             "src": "2183:14:7"
                           },
-                          "referencedDeclaration": 18737,
+                          "referencedDeclaration": 18758,
                           "src": "2183:14:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                            "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                             "typeString": "contract RegisterSystem"
                           }
                         }
@@ -2340,13 +2340,13 @@
                       "src": "2179:46:7",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                        "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                         "typeString": "contract RegisterSystem"
                       }
                     },
                     "src": "2168:57:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                      "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                       "typeString": "contract RegisterSystem"
                     }
                   },
@@ -2367,7 +2367,7 @@
                             "referencedDeclaration": 402,
                             "src": "2264:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                              "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                               "typeString": "contract RegisterSystem"
                             }
                           }
@@ -2375,7 +2375,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                              "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                               "typeString": "contract RegisterSystem"
                             }
                           ],
@@ -2430,7 +2430,7 @@
                         "referencedDeclaration": 399,
                         "src": "2231:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -2442,7 +2442,7 @@
                       "memberLocation": "2240:15:7",
                       "memberName": "authorizeWriter",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16551,
+                      "referencedDeclaration": 16572,
                       "src": "2231:24:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2482,7 +2482,7 @@
                             "referencedDeclaration": 402,
                             "src": "2316:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                              "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                               "typeString": "contract RegisterSystem"
                             }
                           }
@@ -2490,7 +2490,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                              "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                               "typeString": "contract RegisterSystem"
                             }
                           ],
@@ -2545,7 +2545,7 @@
                         "referencedDeclaration": 396,
                         "src": "2280:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -2557,7 +2557,7 @@
                       "memberLocation": "2292:15:7",
                       "memberName": "authorizeWriter",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16551,
+                      "referencedDeclaration": 16572,
                       "src": "2280:27:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2695,7 +2695,7 @@
                         "referencedDeclaration": 396,
                         "src": "2473:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -2707,7 +2707,7 @@
                       "memberLocation": "2485:13:7",
                       "memberName": "registerWorld",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16436,
+                      "referencedDeclaration": 16457,
                       "src": "2473:25:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2810,7 +2810,7 @@
                         "referencedDeclaration": 399,
                         "src": "2519:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -2822,7 +2822,7 @@
                       "memberLocation": "2528:13:7",
                       "memberName": "registerWorld",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16436,
+                      "referencedDeclaration": 16457,
                       "src": "2519:22:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -2887,10 +2887,10 @@
                               "name": "RegisterType",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18521,
+                              "referencedDeclaration": 18542,
                               "src": "2602:12:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18521_$",
+                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18542_$",
                                 "typeString": "type(enum RegisterType)"
                               }
                             },
@@ -2902,10 +2902,10 @@
                             "memberLocation": "2615:6:7",
                             "memberName": "System",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18520,
+                            "referencedDeclaration": 18541,
                             "src": "2602:19:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             }
                           },
@@ -2919,7 +2919,7 @@
                                 "referencedDeclaration": 402,
                                 "src": "2631:8:7",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                                  "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                                   "typeString": "contract RegisterSystem"
                                 }
                               }
@@ -2927,7 +2927,7 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                                  "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                                   "typeString": "contract RegisterSystem"
                                 }
                               ],
@@ -2971,7 +2971,7 @@
                             "name": "registerSystemId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18529,
+                            "referencedDeclaration": 18550,
                             "src": "2642:16:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2986,7 +2986,7 @@
                               "typeString": "address"
                             },
                             {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             },
                             {
@@ -3056,7 +3056,7 @@
                         "referencedDeclaration": 402,
                         "src": "2562:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                          "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                           "typeString": "contract RegisterSystem"
                         }
                       },
@@ -3068,7 +3068,7 @@
                       "memberLocation": "2571:7:7",
                       "memberName": "execute",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18736,
+                      "referencedDeclaration": 18757,
                       "src": "2562:16:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
@@ -3149,7 +3149,7 @@
                     "referencedDeclaration": 396,
                     "src": "2859:11:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                       "typeString": "contract Uint256Component"
                     }
                   },
@@ -3250,7 +3250,7 @@
                     "referencedDeclaration": 399,
                     "src": "3057:8:7",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                       "typeString": "contract Uint256Component"
                     }
                   },
@@ -3380,10 +3380,10 @@
                               "name": "RegisterType",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18521,
+                              "referencedDeclaration": 18542,
                               "src": "3270:12:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18521_$",
+                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18542_$",
                                 "typeString": "type(enum RegisterType)"
                               }
                             },
@@ -3395,10 +3395,10 @@
                             "memberLocation": "3283:9:7",
                             "memberName": "Component",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18519,
+                            "referencedDeclaration": 18540,
                             "src": "3270:22:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             }
                           },
@@ -3434,7 +3434,7 @@
                               "typeString": "address"
                             },
                             {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             },
                             {
@@ -3504,7 +3504,7 @@
                         "referencedDeclaration": 402,
                         "src": "3230:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                          "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                           "typeString": "contract RegisterSystem"
                         }
                       },
@@ -3516,7 +3516,7 @@
                       "memberLocation": "3239:7:7",
                       "memberName": "execute",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18736,
+                      "referencedDeclaration": 18757,
                       "src": "3230:16:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
@@ -3682,10 +3682,10 @@
                               "name": "RegisterType",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18521,
+                              "referencedDeclaration": 18542,
                               "src": "3509:12:7",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18521_$",
+                                "typeIdentifier": "t_type$_t_enum$_RegisterType_$18542_$",
                                 "typeString": "type(enum RegisterType)"
                               }
                             },
@@ -3697,10 +3697,10 @@
                             "memberLocation": "3522:6:7",
                             "memberName": "System",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 18520,
+                            "referencedDeclaration": 18541,
                             "src": "3509:19:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             }
                           },
@@ -3736,7 +3736,7 @@
                               "typeString": "address"
                             },
                             {
-                              "typeIdentifier": "t_enum$_RegisterType_$18521",
+                              "typeIdentifier": "t_enum$_RegisterType_$18542",
                               "typeString": "enum RegisterType"
                             },
                             {
@@ -3806,7 +3806,7 @@
                         "referencedDeclaration": 402,
                         "src": "3469:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_RegisterSystem_$18737",
+                          "typeIdentifier": "t_contract$_RegisterSystem_$18758",
                           "typeString": "contract RegisterSystem"
                         }
                       },
@@ -3818,7 +3818,7 @@
                       "memberLocation": "3478:7:7",
                       "memberName": "execute",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 18736,
+                      "referencedDeclaration": 18757,
                       "src": "3469:16:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$",
@@ -4016,7 +4016,7 @@
                             "referencedDeclaration": 396,
                             "src": "3699:11:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             }
                           },
@@ -4312,7 +4312,7 @@
                             "referencedDeclaration": 393,
                             "src": "4188:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           }
@@ -4320,7 +4320,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           ],
@@ -4328,10 +4328,10 @@
                           "name": "Set",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 17045,
+                          "referencedDeclaration": 17066,
                           "src": "4184:3:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Set_$17045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Set_$17066_$",
                             "typeString": "type(contract Set)"
                           }
                         },
@@ -4347,7 +4347,7 @@
                         "src": "4184:13:7",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Set_$17045",
+                          "typeIdentifier": "t_contract$_Set_$17066",
                           "typeString": "contract Set"
                         }
                       },
@@ -4359,7 +4359,7 @@
                       "memberLocation": "4198:3:7",
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16919,
+                      "referencedDeclaration": 16940,
                       "src": "4184:17:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -4399,7 +4399,7 @@
                             "referencedDeclaration": 396,
                             "src": "4253:11:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             }
                           },
@@ -4419,7 +4419,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             },
                             {
@@ -4733,7 +4733,7 @@
                             "referencedDeclaration": 393,
                             "src": "4580:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           }
@@ -4741,7 +4741,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           ],
@@ -4749,10 +4749,10 @@
                           "name": "Set",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 17045,
+                          "referencedDeclaration": 17066,
                           "src": "4576:3:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Set_$17045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Set_$17066_$",
                             "typeString": "type(contract Set)"
                           }
                         },
@@ -4768,7 +4768,7 @@
                         "src": "4576:13:7",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Set_$17045",
+                          "typeIdentifier": "t_contract$_Set_$17066",
                           "typeString": "contract Set"
                         }
                       },
@@ -4780,7 +4780,7 @@
                       "memberLocation": "4590:3:7",
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16919,
+                      "referencedDeclaration": 16940,
                       "src": "4576:17:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -4820,7 +4820,7 @@
                             "referencedDeclaration": 396,
                             "src": "4645:11:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             }
                           },
@@ -4855,7 +4855,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             },
                             {
@@ -5253,7 +5253,7 @@
                             "referencedDeclaration": 396,
                             "src": "5124:11:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             }
                           },
@@ -5273,7 +5273,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             },
                             {
@@ -5524,7 +5524,7 @@
                             "referencedDeclaration": 396,
                             "src": "5461:11:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             }
                           },
@@ -5559,7 +5559,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                              "typeIdentifier": "t_contract$_Uint256Component_$18503",
                               "typeString": "contract Uint256Component"
                             },
                             {
@@ -5810,7 +5810,7 @@
                         "referencedDeclaration": 396,
                         "src": "5702:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -5830,7 +5830,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         },
                         {
@@ -5983,7 +5983,7 @@
                         "referencedDeclaration": 396,
                         "src": "5938:11:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -6003,7 +6003,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         },
                         {
@@ -6156,7 +6156,7 @@
                         "referencedDeclaration": 399,
                         "src": "6171:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         }
                       },
@@ -6176,7 +6176,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                          "typeIdentifier": "t_contract$_Uint256Component_$18503",
                           "typeString": "contract Uint256Component"
                         },
                         {
@@ -6330,7 +6330,7 @@
                             "referencedDeclaration": 393,
                             "src": "6272:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           }
@@ -6338,7 +6338,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           ],
@@ -6346,10 +6346,10 @@
                           "name": "Set",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 17045,
+                          "referencedDeclaration": 17066,
                           "src": "6268:3:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Set_$17045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Set_$17066_$",
                             "typeString": "type(contract Set)"
                           }
                         },
@@ -6365,7 +6365,7 @@
                         "src": "6268:13:7",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Set_$17045",
+                          "typeIdentifier": "t_contract$_Set_$17066",
                           "typeString": "contract Set"
                         }
                       },
@@ -6377,7 +6377,7 @@
                       "memberLocation": "6282:4:7",
                       "memberName": "size",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17044,
+                      "referencedDeclaration": 17065,
                       "src": "6268:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_uint256_$",
@@ -6739,7 +6739,7 @@
                                     "referencedDeclaration": 396,
                                     "src": "6787:11:7",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                                       "typeString": "contract Uint256Component"
                                     }
                                   },
@@ -6800,7 +6800,7 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_Uint256Component_$18482",
+                                      "typeIdentifier": "t_contract$_Uint256Component_$18503",
                                       "typeString": "contract Uint256Component"
                                     },
                                     {
@@ -6815,7 +6815,7 @@
                                   "referencedDeclaration": 1186,
                                   "src": "6770:16:7",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$922_$_t_uint256_$returns$_t_contract$_IComponent_$18817_$",
+                                    "typeIdentifier": "t_function_internal_view$_t_contract$_IUint256Component_$922_$_t_uint256_$returns$_t_contract$_IComponent_$18838_$",
                                     "typeString": "function (contract IUint256Component,uint256) view returns (contract IComponent)"
                                   }
                                 },
@@ -6831,7 +6831,7 @@
                                 "src": "6770:65:7",
                                 "tryCall": false,
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IComponent_$18817",
+                                  "typeIdentifier": "t_contract$_IComponent_$18838",
                                   "typeString": "contract IComponent"
                                 }
                               },
@@ -6896,7 +6896,7 @@
                                   "typeString": "enum QueryType"
                                 },
                                 {
-                                  "typeIdentifier": "t_contract$_IComponent_$18817",
+                                  "typeIdentifier": "t_contract$_IComponent_$18838",
                                   "typeString": "contract IComponent"
                                 },
                                 {
@@ -7101,10 +7101,10 @@
                         "name": "LibQuery",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18363,
+                        "referencedDeclaration": 18384,
                         "src": "6900:8:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_LibQuery_$18363_$",
+                          "typeIdentifier": "t_type$_t_contract$_LibQuery_$18384_$",
                           "typeString": "type(library LibQuery)"
                         }
                       },
@@ -7116,7 +7116,7 @@
                       "memberLocation": "6909:5:7",
                       "memberName": "query",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17795,
+                      "referencedDeclaration": 17816,
                       "src": "6900:14:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_array$_t_struct$_QueryFragment_$1057_memory_ptr_$dyn_memory_ptr_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
@@ -7306,7 +7306,7 @@
                             "referencedDeclaration": 393,
                             "src": "7076:8:7",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           }
@@ -7314,7 +7314,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_Set_$17045",
+                              "typeIdentifier": "t_contract$_Set_$17066",
                               "typeString": "contract Set"
                             }
                           ],
@@ -7322,10 +7322,10 @@
                           "name": "Set",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 17045,
+                          "referencedDeclaration": 17066,
                           "src": "7072:3:7",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_Set_$17045_$",
+                            "typeIdentifier": "t_type$_t_contract$_Set_$17066_$",
                             "typeString": "type(contract Set)"
                           }
                         },
@@ -7341,7 +7341,7 @@
                         "src": "7072:13:7",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Set_$17045",
+                          "typeIdentifier": "t_contract$_Set_$17066",
                           "typeString": "contract Set"
                         }
                       },
@@ -7353,7 +7353,7 @@
                       "memberLocation": "7086:3:7",
                       "memberName": "has",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17026,
+                      "referencedDeclaration": 17047,
                       "src": "7072:17:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_bool_$",
@@ -7958,9 +7958,9 @@
         ],
         "canonicalName": "World",
         "contractDependencies": [
-          17045,
-          18482,
-          18737
+          17066,
+          18503,
+          18758
         ],
         "contractKind": "contract",
         "documentation": {
