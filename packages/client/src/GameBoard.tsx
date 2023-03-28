@@ -1,11 +1,10 @@
 import * as THREE from "three";
 import { useRef } from "react";
-import { Canvas, ThreeElements, useLoader, useThree } from "@react-three/fiber";
+import { Canvas, ThreeElements, useThree } from "@react-three/fiber";
 import { useComponentValue, useEntityQuery } from "@latticexyz/react";
 import { getComponentValueStrict, Has } from "@latticexyz/recs";
 import { useMUD } from "./MUDContext";
 import { useKeyboardMovement } from "./useKeyboardMovement";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 
 function Plane(props: ThreeElements["mesh"]) {
   const ref = useRef<THREE.Mesh>(null!);
@@ -18,8 +17,6 @@ function Plane(props: ThreeElements["mesh"]) {
 }
 
 function Player(props: ThreeElements["mesh"]) {
-  const obj = useLoader(OBJLoader, "/donkey.obj");
-
   const ref = useRef<THREE.Mesh>(null!);
   return (
     <mesh {...props} ref={ref}>
