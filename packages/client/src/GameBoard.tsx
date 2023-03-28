@@ -23,7 +23,7 @@ function Player(props: ThreeElements["mesh"]) {
   const ref = useRef<THREE.Mesh>(null!);
   return (
     <mesh {...props} ref={ref}>
-      <primitive object={obj} scale={3} rotation={[-Math.PI / 2, 0, 0]} />
+      <boxGeometry args={[1, 2, 1]} />
     </mesh>
   );
 }
