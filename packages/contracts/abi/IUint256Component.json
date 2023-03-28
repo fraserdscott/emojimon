@@ -1,0 +1,1028 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "writer",
+          "type": "address"
+        }
+      ],
+      "name": "authorizeWriter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getEntities",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "getEntitiesWithValue",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "getEntitiesWithValue",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRawValue",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getSchema",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "keys",
+          "type": "string[]"
+        },
+        {
+          "internalType": "enum LibTypes.SchemaValue[]",
+          "name": "values",
+          "type": "uint8[]"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "has",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "indexer",
+          "type": "address"
+        }
+      ],
+      "name": "registerIndexer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        }
+      ],
+      "name": "remove",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "entity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "value",
+          "type": "bytes"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "writer",
+          "type": "address"
+        }
+      ],
+      "name": "unauthorizeWriter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "world",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "authorizeWriter(address)": "4fef6a38",
+    "getEntities()": "31b933b9",
+    "getEntitiesWithValue(bytes)": "b361be46",
+    "getEntitiesWithValue(uint256)": "fbdfa1ea",
+    "getRawValue(uint256)": "b8bc073d",
+    "getSchema()": "6b122fe0",
+    "getValue(uint256)": "0ff4c916",
+    "has(uint256)": "cccf7a8e",
+    "owner()": "8da5cb5b",
+    "registerIndexer(address)": "75c0669c",
+    "remove(uint256)": "4cc82215",
+    "set(uint256,bytes)": "8b282947",
+    "set(uint256,uint256)": "1ab06ee5",
+    "transferOwnership(address)": "f2fde38b",
+    "unauthorizeWriter(address)": "bf4fe57e",
+    "world()": "30b67baa"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"writer\",\"type\":\"address\"}],\"name\":\"authorizeWriter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getEntities\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"getEntitiesWithValue\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"getEntitiesWithValue\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"getRawValue\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSchema\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"keys\",\"type\":\"string[]\"},{\"internalType\":\"enum LibTypes.SchemaValue[]\",\"name\":\"values\",\"type\":\"uint8[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"getValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"has\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"indexer\",\"type\":\"address\"}],\"name\":\"registerIndexer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"}],\"name\":\"remove\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"entity\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"value\",\"type\":\"bytes\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"writer\",\"type\":\"address\"}],\"name\":\"unauthorizeWriter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"world\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"owner()\":{\"returns\":{\"_0\":\"The address of the owner.\"}},\"transferOwnership(address)\":{\"details\":\"Set _newOwner to address(0) to renounce any ownership.\",\"params\":{\"_newOwner\":\"The address of the new owner of the contract\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getSchema()\":{\"notice\":\"Return the keys and value types of the schema of this component. \"},\"owner()\":{\"notice\":\"Get the address of the owner\"},\"transferOwnership(address)\":{\"notice\":\"Set the address of the new owner of the contract\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":\"IUint256Component\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@latticexyz/=../../node_modules/@latticexyz/\",\":@rari-capital/=../../node_modules/@rari-capital/\",\":components/=src/components/\",\":ds-test/=../../node_modules/ds-test/src/\",\":forge-std/=../../node_modules/forge-std/src/\",\":libraries/=src/libraries/\",\":memmove/=../../node_modules/memmove/src/\",\":packages/=../../../mud/packages/\",\":solecs/=../../node_modules/@latticexyz/solecs/src/\",\":solmate/=../../node_modules/@rari-capital/solmate/src/\",\":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/\",\":systems/=src/systems/\"]},\"sources\":{\"/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/LibTypes.sol\":{\"keccak256\":\"0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798\",\"dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH\"]},\"/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol\":{\"keccak256\":\"0x4513448bb0d45050f8af0a2ead426b27a5d5ca73d38c6874e909f852ad2232e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e5c215b87500c80ffb525142b753a4f3454a69cf11b9b68f6a29f1a4dd4a2ced\",\"dweb:/ipfs/Qmd4YYoYJTrgyQU8zcfJFDdYQA29DarkdL8k5obyGgbp2K\"]},\"/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol\":{\"keccak256\":\"0xc8fa875a59c2010265d7fc5663d9d37e6b5f9b556b6bfdeeb7ec9355ee3169c7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://33d944c6ff71c7afe4d21db8f4077e419f165100bbfd8b6c8d4b975015ec6c82\",\"dweb:/ipfs/QmY461W1TtyjkkcUuxPHUtJ3LxzD1iaU422FkFhtHHuRQh\"]},\"/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol\":{\"keccak256\":\"0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f\",\"dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "writer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "authorizeWriter"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntities",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntitiesWithValue",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getEntitiesWithValue",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getRawValue",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getSchema",
+          "outputs": [
+            {
+              "internalType": "string[]",
+              "name": "keys",
+              "type": "string[]"
+            },
+            {
+              "internalType": "enum LibTypes.SchemaValue[]",
+              "name": "values",
+              "type": "uint8[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getValue",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "has",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "indexer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "registerIndexer"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "remove"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "set"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "entity",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "value",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "set"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "writer",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unauthorizeWriter"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "world",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "owner()": {
+            "returns": {
+              "_0": "The address of the owner."
+            }
+          },
+          "transferOwnership(address)": {
+            "details": "Set _newOwner to address(0) to renounce any ownership.",
+            "params": {
+              "_newOwner": "The address of the new owner of the contract"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "getSchema()": {
+            "notice": "Return the keys and value types of the schema of this component. "
+          },
+          "owner()": {
+            "notice": "Get the address of the owner"
+          },
+          "transferOwnership(address)": {
+            "notice": "Set the address of the new owner of the contract"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@latticexyz/=../../node_modules/@latticexyz/",
+        ":@rari-capital/=../../node_modules/@rari-capital/",
+        ":components/=src/components/",
+        ":ds-test/=../../node_modules/ds-test/src/",
+        ":forge-std/=../../node_modules/forge-std/src/",
+        ":libraries/=src/libraries/",
+        ":memmove/=../../node_modules/memmove/src/",
+        ":packages/=../../../mud/packages/",
+        ":solecs/=../../node_modules/@latticexyz/solecs/src/",
+        ":solmate/=../../node_modules/@rari-capital/solmate/src/",
+        ":std-contracts/=../../node_modules/@latticexyz/std-contracts/src/",
+        ":systems/=src/systems/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 1000000
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol": "IUint256Component"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/LibTypes.sol": {
+        "keccak256": "0xa3898035fd9fa865bcfc9861e3b5ecce36be3196fb27705e50a02fed9831f102",
+        "urls": [
+          "bzz-raw://273284a35a950f6d0bc4223d345cf46c59972a00510ddbc4ba695ede38714798",
+          "dweb:/ipfs/QmdqzKMaAfKWfBzUsrzsDMWnyxSKJRuEvrc6VTR5VarQaH"
+        ],
+        "license": "MIT"
+      },
+      "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol": {
+        "keccak256": "0x4513448bb0d45050f8af0a2ead426b27a5d5ca73d38c6874e909f852ad2232e6",
+        "urls": [
+          "bzz-raw://e5c215b87500c80ffb525142b753a4f3454a69cf11b9b68f6a29f1a4dd4a2ced",
+          "dweb:/ipfs/Qmd4YYoYJTrgyQU8zcfJFDdYQA29DarkdL8k5obyGgbp2K"
+        ],
+        "license": "MIT"
+      },
+      "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IERC173.sol": {
+        "keccak256": "0xc8fa875a59c2010265d7fc5663d9d37e6b5f9b556b6bfdeeb7ec9355ee3169c7",
+        "urls": [
+          "bzz-raw://33d944c6ff71c7afe4d21db8f4077e419f165100bbfd8b6c8d4b975015ec6c82",
+          "dweb:/ipfs/QmY461W1TtyjkkcUuxPHUtJ3LxzD1iaU422FkFhtHHuRQh"
+        ],
+        "license": "MIT"
+      },
+      "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol": {
+        "keccak256": "0x12e2eaa4c5663048343e43a1994c446baacb16a4aacbe314ed5202d878751be9",
+        "urls": [
+          "bzz-raw://2d78184a1b1868773f2d5a7cf54bb42bccc666dc75cea14eeed15b8573fd000f",
+          "dweb:/ipfs/QmemXPHPB7V8StWR8kZcKt3eDxB78sZFZW4Dp7TcEFTxx9"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IUint256Component.sol",
+    "id": 14819,
+    "exportedSymbols": {
+      "IComponent": [
+        14710
+      ],
+      "IUint256Component": [
+        14818
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:336:42",
+    "nodes": [
+      {
+        "id": 14791,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:42",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 14793,
+        "nodeType": "ImportDirective",
+        "src": "58:46:42",
+        "nodes": [],
+        "absolutePath": "/Users/fraserscott/Documents/Github/emojimon/node_modules/@latticexyz/solecs/src/interfaces/IComponent.sol",
+        "file": "./IComponent.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 14819,
+        "sourceUnit": 14711,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 14792,
+              "name": "IComponent",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 14710,
+              "src": "67:10:42",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 14818,
+        "nodeType": "ContractDefinition",
+        "src": "106:261:42",
+        "nodes": [
+          {
+            "id": 14802,
+            "nodeType": "FunctionDefinition",
+            "src": "152:53:42",
+            "nodes": [],
+            "functionSelector": "1ab06ee5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "set",
+            "nameLocation": "161:3:42",
+            "parameters": {
+              "id": 14800,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14797,
+                  "mutability": "mutable",
+                  "name": "entity",
+                  "nameLocation": "173:6:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14802,
+                  "src": "165:14:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14796,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "165:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 14799,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "189:5:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14802,
+                  "src": "181:13:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14798,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "181:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "164:31:42"
+            },
+            "returnParameters": {
+              "id": 14801,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "204:0:42"
+            },
+            "scope": 14818,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14809,
+            "nodeType": "FunctionDefinition",
+            "src": "209:66:42",
+            "nodes": [],
+            "functionSelector": "0ff4c916",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getValue",
+            "nameLocation": "218:8:42",
+            "parameters": {
+              "id": 14805,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14804,
+                  "mutability": "mutable",
+                  "name": "entity",
+                  "nameLocation": "235:6:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14809,
+                  "src": "227:14:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14803,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "227:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "226:16:42"
+            },
+            "returnParameters": {
+              "id": 14808,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14807,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14809,
+                  "src": "266:7:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14806,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "266:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "265:9:42"
+            },
+            "scope": 14818,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 14817,
+            "nodeType": "FunctionDefinition",
+            "src": "279:86:42",
+            "nodes": [],
+            "functionSelector": "fbdfa1ea",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getEntitiesWithValue",
+            "nameLocation": "288:20:42",
+            "parameters": {
+              "id": 14812,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14811,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "317:5:42",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14817,
+                  "src": "309:13:42",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14810,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "309:7:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "308:15:42"
+            },
+            "returnParameters": {
+              "id": 14816,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 14815,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 14817,
+                  "src": "347:16:42",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 14813,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "347:7:42",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 14814,
+                    "nodeType": "ArrayTypeName",
+                    "src": "347:9:42",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "346:18:42"
+            },
+            "scope": 14818,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 14794,
+              "name": "IComponent",
+              "nameLocations": [
+                "137:10:42"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 14710,
+              "src": "137:10:42"
+            },
+            "id": 14795,
+            "nodeType": "InheritanceSpecifier",
+            "src": "137:10:42"
+          }
+        ],
+        "canonicalName": "IUint256Component",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          14818,
+          14710,
+          14733
+        ],
+        "name": "IUint256Component",
+        "nameLocation": "116:17:42",
+        "scope": 14819,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 42
+}
